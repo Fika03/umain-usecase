@@ -8,9 +8,9 @@ export default async function Home() {
   const restaurants: IRestaurant[] = res.restaurants;
 
   return (
-    <main className="bg-gray-100 flex min-h-screen flex-col items-center justify-between p-24">
-      <section>
-        <h2 className=" text-xl">Restaurant's</h2>
+    <main className="bg-[#FAFAFA] flex min-h-screen w-[100vw] flex-col items-center justify-between p-24">
+      <section className="w-[90%] lg:w-[80%] flex flex-col">
+        <h2 className="text-[20px]">Restaurant's</h2>
         {restaurants.map((restaurant) => (
           <RestaurantCard restaurant={restaurant} key={restaurant.id} />
         ))}
